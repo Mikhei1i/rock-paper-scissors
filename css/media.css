@@ -1,0 +1,105 @@
+/* iPhone XR */
+
+@media (max-width: 415px) {
+    .moves {
+        margin-left: 16%;
+        margin-top: 50px;
+    }
+
+    .button-row1 {
+        margin-left: 6%;
+    }
+
+    .result {
+        margin-top: 70px;
+    }
+
+    .reset {
+        margin-top: 50px;
+    }
+}
+
+/* iPhone 12 pro */
+
+@media (max-width: 391px) {
+    .moves {
+        margin-left: 15%;
+    }
+}
+
+/* Pixel 5 */
+
+@media (max-width: 394px) {
+    .moves {
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 413px) {
+    .moves {
+        margin-left: 16%;
+    }
+
+    .reset {
+        margin-top: 70px;
+    }
+
+    .score {
+        margin-top: 80px;
+    }
+}
+
+
+/* iPhone SE */
+
+@media (max-width: 380px) {
+    .score {
+        margin-top: 0;
+    }
+
+    .result {
+        margin-top: 30px;
+    }
+
+    .moves {
+        margin-left: 13%;
+    }
+
+    .reset {
+        margin-top: 10px;
+    }
+
+    .button-row1 {
+        justify-content: space-around;
+        margin-left: 5%;
+    }
+}
+
+/* Samsung Galaxy S8+ */
+
+@media (max-width: 365px) {
+    .moves {
+        margin-left: 11%;
+    }
+
+    .reset {
+        margin-top: 10px;
+    }
+
+    .score {
+        margin-bottom: 16px;
+        margin-top: 0;
+    }
+}
+
+/* Galaxy Fold */
+
+@media (max-width: 290px) {
+    body {
+        width: 400px;
+    }
+
+    .moves {
+        margin-left: 17%;
+    }
+}
