@@ -11,7 +11,7 @@ let score = JSON.parse(localStorage.getItem("score")) || {
 
     let result = "";
 
-    if (playerMove === "Scissors") {
+    if (playerMove === "scissors") {
       if (computerMove === "rock") {
         result = "You lose.";
       } else if (computerMove === "paper") {
@@ -19,7 +19,7 @@ let score = JSON.parse(localStorage.getItem("score")) || {
       } else if (computerMove === "scissors") {
         result = "Tie.";
       }
-    } else if (playerMove === "Paper") {
+    } else if (playerMove === "paper") {
       if (computerMove === "rock") {
         result = "You win.";
       } else if (computerMove === "paper") {
@@ -27,7 +27,7 @@ let score = JSON.parse(localStorage.getItem("score")) || {
       } else if (computerMove === "scissors") {
         result = "You lose.";
       }
-    } else if (playerMove === "Rock") {
+    } else if (playerMove === "rock") {
       if (computerMove === "rock") {
         result = "Tie.";
       } else if (computerMove === "paper") {
