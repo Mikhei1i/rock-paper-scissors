@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.move-icon {
+    height: 65px;
+    padding: 20px;
+    transition: all 0.15s;
+    vertical-align: middle;
+}
+
+.rock-button,
+.paper-button,
+.scissors-button {
+    background: none;
+    border: 3px solid white;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: all 0.15s;
+}
+
+.rock-button:hover,
+.paper-button:hover,
+.scissors-button:hover {
+    cursor: pointer;
+    background-color: rgb(49, 49, 49);
+}
+
+.rock-button:hover .move-icon,
+.paper-button:hover .move-icon,
+.scissors-button:hover .move-icon {
+    opacity: 0.7;
+}
+
+.rock-button:active,
+.scissors-button:active,
+.paper-button:active {
+    background-color: rgb(60, 60, 60);
+}
+
+.rock-button:active .move-icon,
+.scissors-button:active .move-icon,
+.paper-button:active .move-icon {
+    opacity: 1;
+}
+
+.result {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.score {
+    margin-top: 60px;
+}
+
+.reset {
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    padding: 10px 15px;
+    transition: all 0.15s;
+    margin-top: 20px;
+}
+
+.reset:hover {
+    cursor: pointer;
+    background-color: #9d2622;
+    color: white;
+    border: 1px solid white;
+}
+
+.reset:active {
+    background-color: #85211d;
+}
+
+.line {
+    background-color: white;
+    width: 3px;
+    height: 70px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.moves {
+    margin-left: 30px;
+}
