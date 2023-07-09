@@ -93,6 +93,8 @@ body {
     padding: 10px 15px;
     transition: all 0.15s;
     margin-top: 20px;
+    margin-right: 20px;
+    border: 1px solid white;
 }
 
 .reset:hover {
@@ -104,6 +106,27 @@ body {
 
 .reset:active {
     background-color: #85211d;
+}
+
+.auto {
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    padding: 10px 15px;
+    transition: all 0.15s;
+    margin-top: 20px;
+    border: 1px solid white;
+}
+
+.auto:hover {
+    cursor: pointer;
+    background-color: #266993;
+    color: white;
+    border: 1px solid white;
+}
+
+.auto:active {
+    background-color: #1f5677;
 }
 
 .moves {
