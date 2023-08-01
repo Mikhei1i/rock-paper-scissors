@@ -107,3 +107,12 @@ let score = JSON.parse(localStorage.getItem("score")) || {
 
     return computerMove;
   }
+
+document.addEventListener('keydown', (event) => {
+  console.log(event.key)
+  if (event.key === 'r') {
+    playGame('rock')
+  } else if (event.key === 'R') {
+    playGame('rock')
+  }
+})
