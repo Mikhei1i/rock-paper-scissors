@@ -116,3 +116,57 @@ document.addEventListener('keydown', (event) => {
     playGame('rock')
   }
 })
+
+const rock = document.querySelector('.rock-button')
+const paper = document.querySelector('.paper-button')
+const scissors = document.querySelector('.scissors-button')
+
+rock.addEventListener('click', () => {
+  playGame('rock')
+})
+
+paper.addEventListener('click', () => {
+  playGame('paper')
+})
+
+scissors.addEventListener('click', () => {
+  playGame('scissors')
+})
+
+const autoPlayButton = document.querySelector('.auto')
+
+autoPlayButton.addEventListener('click', () => {
+  autoPlay()
+})
+
+const resetButton = document.querySelector('.reset')
+const yesButton = document.querySelector('.yes')
+const noButton = document.querySelector('.no')
+
+resetButton.addEventListener('click', () => {
+  overlay.classList.toggle('active')
+  popUp.classList.toggle('active')
+
+  yesButton.addEventListener('click', () => {
+    score.wins =0;
+    score.loses = 0;
+    score.ties = 0;
+    localStorage.removeItem('score')
+    updateScoreElement()
+    popUp.classList.remove('active')
+    overlay.classList.remove('active')
+  })
+
+  noButton.addEventListener('click', () => {
+    popUp.classList.remove('active')
+    overlay.classList.remove('active')
+  })
+})
+
+const overlay = document.querySelector('.pop-up-overlay')
+const popUp = document.querySelector('.pop-up')
+
+overlay.addEventListener('click', () => {
+  popUp.classList.remove('active')
+  overlay.classList.remove('active')
+})
