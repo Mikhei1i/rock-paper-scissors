@@ -9,6 +9,7 @@
       type="image/x-icon"
       href="/images/rock-paper-scissors.png"
     />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
   </head>
@@ -16,42 +17,28 @@
     <div class="conteiner text">
       <p class="title">Rock Paper Scissors</p>
       <div class="button-row1">
-        <button
-          onclick="
-              playGame('rock')
-              "
-          class="rock-button"
-        >
+        <button class="rock-button">
           <img src="images/rock-emoji.png" alt="" class="move-icon" />
         </button>
-        <button
-          onclick="
-              playGame('paper')
-              "
-          class="paper-button"
-        >
+        <button class="paper-button">
           <img src="images/paper-emoji.png" alt="" class="move-icon" />
         </button>
-        <button
-          onclick="
-                 playGame('scissors')
-              "
-          class="scissors-button"
-        >
+        <button class="scissors-button">
           <img src="images/scissors-emoji.png" alt="" class="move-icon" />
         </button>
       </div>
       <p class="js-result result"></p>
       <p class="js-moves moves"></p>
       <p class="js-score score"></p>
-      <button
-        onclick="score.wins = 0; score.loses = 0; score.ties = 0; localStorage.removeItem('score')
-            updateScoreElement()"
-        class="reset"
-      >
-        Reset Score
-      </button>
-      <button class="auto js-auto" onclick="autoPlay()">Auto Play</button>
+      <button class="reset">Reset Score</button>
+      <button class="auto js-auto">Auto Play</button>
+    </div>
+    <div class="pop-up-overlay">
+      <div class="pop-up">
+        <p>Are you sure you want to reset the score?</p>
+        <button class="yes">Yes</button>
+        <button class="no">No</button>
+      </div>
     </div>
     <script src="JavaScript/rock-paper-scissors.js"></script>
   </body>
